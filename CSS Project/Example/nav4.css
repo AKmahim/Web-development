@@ -1,0 +1,48 @@
+body{
+	font-family: Arial,sans-serif;
+	margin: 0;	
+}
+
+ul.topnav{
+	list-style-type: none;
+	background-color:#333;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.topnav li{
+	float: left;
+
+}
+
+ul.topnav li a{
+	text-decoration: none;
+	display: block;
+	font-size: 23px;
+	color: white;
+	padding: 16px 16px;
+	text-align: center;
+}
+
+ul.topnav li a:hover{
+	background-color: #111;
+	color: white;
+}
+
+ul.topnav li a:active{
+	background-color: #4CAF50;
+}
+
+ul.topnav li.right{
+	float: right;
+}
+
+@media screen and (max-width: 600px){
+	ul.topnav li{
+		float: none;
+	}
+	ul.topnav li.right{
+		float: none;
+	}
+}

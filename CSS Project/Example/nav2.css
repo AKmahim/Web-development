@@ -1,0 +1,38 @@
+body{
+	font-family: Arial,sans-serif;
+}
+
+ul{
+	list-style-type: none;
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 50px;
+
+}
+
+li{
+
+	float: left;
+	border-right: 1px solid #ddd;
+	height: 100%
+}
+li a{
+	display: block;
+	text-decoration: none;
+	padding: 14px 14px;
+	color: white;
+	font-size: 23px;
+}
+li a:hover{
+	background-color: #111;
+}
+
+li a:active{
+	background-color: #4CAF50;
+}
+
+li:last-child{
+	border-right: none;
+}

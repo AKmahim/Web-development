@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+}
+
+
+ul{
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	width: 25%;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+}
+li a{
+	display: block;
+	padding:10px 16px;
+	font-size: 22px;
+	color: #000;
+	text-decoration: none;
+}
+li a:visited{
+
+}
+
+li a:hover{
+	background-color: #555;
+	color: white;
+}
+li a:active{
+	background-color: #5b5;
+	color: white;
+}
+
+div{
+	margin-left: 25%;
+	padding: 1px 16px;
+	height: 1000px;
+}
