@@ -1,0 +1,47 @@
+.body{
+	font-family: Arial,sans-serif;
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+
+}
+
+.header{
+	background-color: #5bc;
+	text-align: center;
+	padding: 20px;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+	height: 300px;
+}
+
+.column.side{
+	width: 25%;
+}
+
+.column.middle{
+	width: 50%;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media (max-width: 700px ){
+	.column.side, .column.middle{
+		width: 100%;
+	}
+}
+
+.footer{
+	background-color: #eee;
+	text-align: center;
+	padding: 15px;
+}
