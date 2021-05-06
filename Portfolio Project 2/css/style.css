@@ -1,0 +1,360 @@
+@import 'utilities.css';
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    height: 8000px;
+	font-family: 'Heebo',sans-serif;
+}
+
+header{
+	background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+	padding: 51px 107px;
+    padding-bottom: 120px;
+}
+
+header .right a{
+    text-decoration: none;
+    color: var(--light);
+    padding-left: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+section.bio{
+	background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+	height: 600px;
+    padding: 0;
+    margin:0;
+
+
+
+}
+
+section.bio .container{
+
+    background-color: var(--white);
+    margin: 0 90px;
+    border-radius: 10px;
+    padding-top: 20px;
+    /*margin-left: 4rem;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+section.bio .container .photo{
+    margin: 2rem;
+}
+
+section.bio .container .data{
+    padding-left: 4rem;
+    
+}
+section.bio .container .data h6{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: 400;
+    /*padding-bottom: 10px;*/
+}
+
+section.bio .container .data h1{
+    font-family: 'Heebo',sans-serif;
+    font-size: 48px;
+    font-weight: 700px;
+    color: var(--dark);
+    /*line-height: 2rem;*/
+    /*padding-bottom: 10px;*/
+
+}
+
+section.bio .container .data h4{
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+    padding-bottom: 2rem;
+}
+section.bio .container .data p{
+    color: #777777;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+section.bio .container .data .address{
+    padding-top: 2rem;
+}
+
+section.bio .container .data .address ul{
+    list-style-type: none;
+}
+
+section.bio .container .data .address li span{
+    font-size: 20px;
+    color: #9cf;
+    padding-right: 20px;
+}
+
+section.bio .container .data .address li a{
+    text-decoration: none;
+    color: #777;
+}
+
+section.bio .container .data .address li{
+    padding-bottom: 20px;
+
+}
+section.bio .container .data .social .card{
+    height: 40px;
+    width: 40px; 
+    background-color: #e8e8e8;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+
+section.bio .container .data .social .card span{
+    font-size: 20px;
+    color: var(--white);
+    padding-right: 20px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+section.bio .container .data .social .card:hover{
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    /*opacity: 0.5;*/
+}
+
+section.skill .container{
+    padding-top: 150px;
+}
+
+section.skill .container .about{
+    margin-left: 100px;
+}
+
+section.skill .container .about h1{
+    font-size: 36px;
+    line-height: 43px;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: var(--dark);
+
+}
+
+section.skill .container .about p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #777;
+    /*padding-bottom: 30px;*/
+}
+
+section.skill .container .about .card-wrapper{
+    padding-top: 30px;
+   
+}
+
+section.skill .container .about .card-wrapper .card{
+    border:1px solid #8ff;
+    background-color: #8ff;
+    border-radius: 5px;
+    align-content: center;
+    padding: 20px; 
+    margin-left: 15px;
+}
+
+section.skill .container .about .card-wrapper .card span{
+    font-size: 20px;
+    /*color: #89f;*/
+    color: var(--dark);
+    padding-right: 20px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.skill .container .about .card-wrapper .card h4{
+    font-size: 24px;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark);
+    padding-bottom: 10px;
+
+}
+
+section.skill .container .progress-container{
+    padding-left: 20px;
+    /*margin-left: 10px;*/
+    padding-bottom: 200px;
+    padding-top: 70px;
+    padding-right: 120px;
+
+}
+section.skill .container .progress-container .skill-items{
+    margin-bottom: 15px;
+}
+
+section.skill .container .progress-container .skill-items:last-child{
+    margin-bottom: 0px;
+}
+section.skill .container .progress-container .skill-items .progress-bar-1{
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    border-radius: 10px; 
+    width: 550px;
+
+}
+
+section.skill .container .progress-container .skill-items .progress-bar-2{
+    height: 10px;
+    width: 535px;
+    border-radius: 10px;
+    background: #e8e8e8;
+
+    /*background-color: var(--dark);*/
+
+}
+
+section.skill .container .progress-container .skill-items .progress-bar{
+    width: 65%;
+    transition: width .6s ease;
+    height: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    align-self: center;
+    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+
+
+section.skill .container .progress-container .skill-items h4{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--dark);
+    padding-bottom: 20px;
+}
+
+section.client {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+section.client .container .title {
+    text-align: center;
+    margin: 0px 130px 75px;
+}
+
+
+
+section.client .container .title h2{
+    font-family: 'Heebo',sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px 0px 15px;
+}
+
+section.client .container .title p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #777;
+}
+
+section.client .container .card-wrapper .card .item .img img{
+    height: 40px;
+    width: 40px;
+    fill: #232332;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.tools_expert {
+  padding: 20px 0px 0px 0px; }
+  .tools_expert .skill_main .skill_item {
+    margin-bottom: 18px; }
+    .tools_expert .skill_main .skill_item:last-child {
+      margin-bottom: 0px; }
+    .tools_expert .skill_main .skill_item h4 {
+      text-align: none;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #222222;
+      margin-bottom: 15px; }
+    .tools_expert .skill_main .skill_item .progress_br {
+      border: 1px solid #eeeeee;
+      padding: 5px;
+      border-radius: 10px; }
+    .tools_expert .skill_main .skill_item .progress {
+      height: 10px;
+      border-radius: 10px;
+      background: #e8e8e8; }
+      .tools_expert .skill_main .skill_item .progress .progress-bar {
+        width: 0%;
+        transition: width .6s ease;
+        height: 10px;
+        border-radius: 5px;
+        vertical-align: middle;
+        align-self: center;
+        background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+        background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }*/

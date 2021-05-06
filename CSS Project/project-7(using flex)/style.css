@@ -7,7 +7,8 @@
 }
 
 .header{
-	background-color: #5bc;
+	height: 500px;
+	background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 	padding: 20px;
 	text-align: center;
 }
@@ -29,13 +30,14 @@
 }
 
 .column.middle{
+	background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 	-webkit-flex:2;
 	-ms-flex:2;
 	flex:2;
 }
 
 .footer{
-	background-color: #eee;
+	background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 	padding: 10px;
 	text-align: center;
 }
