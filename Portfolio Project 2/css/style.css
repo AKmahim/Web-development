@@ -7,7 +7,7 @@
     --pink: #e83e8c;
     --red: #dc3545;
     --orange: #fd7e14;
-    --yellow: #ffc107;
+    --yellow: #ffc107;  
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
@@ -32,7 +32,7 @@
 }
 
 body{
-    height: 8000px;
+    /*height: 8000px;*/
 	font-family: 'Heebo',sans-serif;
 }
 
@@ -52,6 +52,8 @@ header .right a{
 
 }
 
+/*------------------------------------------------------------------*/
+/*---------------bio-------------------*/
 
 section.bio{
 	background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
@@ -162,6 +164,12 @@ section.bio .container .data .social .card:hover{
     /*opacity: 0.5;*/
 }
 
+/*------------------------------------------------------------------*/
+/*---------------bio end-------------------*/
+
+
+/*------------------------------------------------------------------*/
+/*-----------------------------skill-----------------------------------*/
 section.skill .container{
     padding-top: 150px;
 }
@@ -279,6 +287,12 @@ section.skill .container .progress-container .skill-items h4{
     padding-bottom: 20px;
 }
 
+/*------------------------------------------------------------------*/
+/*-----------------------------skill end-----------------------------------*/
+
+/*------------------------------------------------------------------*/
+/*-----------------------------client-----------------------------------*/
+
 section.client {
     padding: 100px 0;
     background-color: #f9f9f9;
@@ -306,55 +320,318 @@ section.client .container .title p{
     color: #777;
 }
 
-section.client .container .card-wrapper .card .item .img img{
-    height: 40px;
-    width: 40px;
-    fill: #232332;
+section.client .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0px 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+section.client .container .card-wrapper .card{
+    background: #fff;
+    padding: 50px 35px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+section.client .container .card-wrapper .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+section.client .container .card-wrapper .card .item .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #e9e9e9;
+
+
+}
+
+section.client .container .card-wrapper .card:hover .item .icon{
+   background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*------------------------------------------------------------------*/
+/*-----------------------------client end-----------------------------------*/
+
+
+
+/*------------------------------------------------------------------*/
+/*-----------------------------work start-----------------------------------*/
+section.work{
+    padding: 100px 0px;
+}
+
+section.work .container .title {
+    text-align: center;
+    margin: 0px 130px 75px;
+}
+
+section.work .container .title h2{
+    font-family: 'Heebo',sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px 0px 15px;
+}
+
+section.work .container .title p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #777;
+}
+
+section.work .container .link ul{
+    list-style-type: none;
+
+}
+section.work .container .link li{
+    display: inline-block;
+    /*float: left;*/
+    padding-right: 45px;
+    transition: all .3s ease;
+
+}
+
+section.work .container .link li a{
+    text-decoration: none;
+    color: var(--dark);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+section.work .container .link{
+    padding: 0px 30%;
+    padding-bottom: 3rem;
+}
+
+section.work .container .link li:hover a{
+    color: #766dff;
+}
+
+
+section.work .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin: 0px 100px;
+}
+
+section.work .container .card-wrapper .card .card-content h4{
+    font-family: 'Heebo',sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    margin: 22px 0px 8px;
+    text-align: center;
+}
+
+section.work .container .card-wrapper .card .card-content p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #777;
+    text-align: center;
+}
+
+section.work .container .card-wrapper .card {
+    position: relative;
+}
+section.work .container .card-wrapper .card .img img{
+    width: 100%;
+    height: 100%;
+}
+/*section.work .container .card-wrapper .card .overlay{
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    opacity: 0;
+    width: 100%
+    height:100%;
+    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+
+}*/
+section.work .container .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    /*background: rgba(61,207,211,0.8);*/
+    /*color: var(--primary);*/
+    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+section.work .container .card-wrapper .card:hover .overlay{
+    opacity: 0.8;
+}
+
+section.work .container .card-wrapper .card:hover h4{
+    color: #766eff;
+}
+
+section.work .container .btn{
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+section.work .container .btn button{
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    border:1px solid blue;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+
+}
+section.work .container .btn button a{
+    text-decoration: none;
+    color: white;
 
 }
 
 
+/*------------------------------------------------------------------*/
+/*-----------------------------work end-----------------------------------*/
 
 
 
+/*------------------------------------------------------------------*/
+/*-----------------------------test start-----------------------------------*/
+section.test .container{
+    /*margin: 100px 0px;*/
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: #e9e9e9;
+}
+
+section.test .container .slider{
+    padding:0px 60px;
+
+}
+
+section.test .container .slider .slide{
+    padding: 2rem 2rem;
+    background: white;
+    margin-bottom: 2rem;
+    border:1px solid white;
+    /*padding-right: 2rem;*/
+    margin-right: 2rem;
+    border-radius: 5px; 
+    /*display: float;*/
+    /*float: left;*/
+}
+section.test .container .slider .slide p{
+    padding-bottom: 1rem;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #777;
+    /*text-align: center;*/
+    /*padding-bottom: 50px;*/
+}
+section.test .container .slider .slide h4{
+    padding-bottom: 1rem;
+}
+
+section.test .container .slider .slide i{
+    color: gold;
+}
+
+
+/*------------------------------------------------------------------*/
+/*-----------------------------test end-----------------------------------*/
+
+/*------------------------------------------------------------------*/
+/*-----------------------------footer start-----------------------------------*/
+
+footer {
+    padding: 120px 0;
+    background: #000;
+
+}
+footer .container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+    padding-left: 100px;
+
+}
+
+footer .container h3{
+    font-family: 'Heebo',sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-bottom: 2rem;
+
+}
+footer .container p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #777;
+    /*text-align: center;*/
+    padding-bottom: 1.2rem;
+}
 
 
 
+footer .container .about h3{
+    padding-bottom: 2.5rem;
+}
+
+footer .container .news input{
+    border: 1px solid #1e233b;
+    padding: 0.7rem 1rem;
+    width: 320px;
+    /*margin: 1rem;*/
+    font-size: 14px;
+    background: black;
+    color: white;
+    text-align: left;
+}
+
+footer .container .news button{
+    padding:10px;
+    border:1px solid transparent;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 
 
+}
+footer .container .news button i{
+    font-size: 15px;
+}
+footer .container .social i{
+    padding-right: 10px;
+    color: white;
 
-
-
-
-
-/*.tools_expert {
-  padding: 20px 0px 0px 0px; }
-  .tools_expert .skill_main .skill_item {
-    margin-bottom: 18px; }
-    .tools_expert .skill_main .skill_item:last-child {
-      margin-bottom: 0px; }
-    .tools_expert .skill_main .skill_item h4 {
-      text-align: none;
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      color: #222222;
-      margin-bottom: 15px; }
-    .tools_expert .skill_main .skill_item .progress_br {
-      border: 1px solid #eeeeee;
-      padding: 5px;
-      border-radius: 10px; }
-    .tools_expert .skill_main .skill_item .progress {
-      height: 10px;
-      border-radius: 10px;
-      background: #e8e8e8; }
-      .tools_expert .skill_main .skill_item .progress .progress-bar {
-        width: 0%;
-        transition: width .6s ease;
-        height: 10px;
-        border-radius: 5px;
-        vertical-align: middle;
-        align-self: center;
-        background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }*/
+}
+footer .container .social p{
+    padding-bottom: 15px;
+}
+footer .container .social i:hover{
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

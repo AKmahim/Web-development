@@ -349,12 +349,15 @@ section.blog .card-wrapper{
 }
 section.blog .card-wrapper .card{
 	background-color: var(--pure);
+	border-radius: 10px;
 
 }
 section.blog .card-wrapper .card .img-wrapper{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: 10px;
+	
 }
 section.blog .card-wrapper .card .card-content{
 	padding: 1.2rem;
