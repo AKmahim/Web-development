@@ -3,4 +3,4 @@
 #here i use just HTML,CSS,Bootstrap
 
 # Website Image
-![alt text](https://github.com/AKmahim/Web-development/tree/master/Website%20using%20bootstarp/images/SS.png)
+![alt text](https://github.com/AKmahim/Web-development/tree/master/Website%20using%20bootstarp/images/ss.png)
