@@ -8,4 +8,4 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 
-![travel-website](/images/ss.png)
+![travel-website](https://github.com/AKmahim/Web-development/blob/master/travel-website/images/ss.png)
