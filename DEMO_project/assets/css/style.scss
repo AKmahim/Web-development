@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
+
+// predefine variable 
+$primary_color : #f3c500;
+$secondary_color : #201f1f;
+$text-color : #ffffff;
+$text-color-secondary: #999b9c;
+// $header-bg-color : #373334;
+$header-bg-color : $primary_color;
+
+
+
+//font size
+$header-height : 3rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-semi-bold: .75rem;
+
+
+
+/*======== Font weight ======*/
+$font-medium: 500;
+$font-semi-bold: 600;
+
+/*============ Z index ==========*/
+$z-tooltip: 10;
+$z-fixed: 100;
+
+
+/*============= Hover Overlay ============*/
+$img-transition: .3s;
+$img-hidden: hidden;
+$img-scale: scale(1.1);
+
+
+
+ /*========== BASE =============*/
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    /*height: 8000px;*/
+    margin: $header-height 0 0 0;
+    font-family: 'Lato',sans-serif;
+    font-size: $normal-font-size;
+    color: $text-color;
+
+    height: 5000px;
+}
+
+h1,h2,h3{
+    
+    font-weight: $font-semi-bold;
+} 
+
+ul{
+
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+img,
+video{
+    max-width: 100%;
+    height: auto;
+
+}
+
+button,
+input{
+    border: none;
+    
+}
+
+button{
+   cursor: pointer;
+}
+
+input{
+   outline: none;
+
+}
+.main{
+   overflow-x: hidden;
+}
+
+
+
+
+
+/*===============REUSABLE CSS CLASSES==============*/
+.section{
+   padding: 4.5rem 2.5rem;
+
+}
+
+.section{
+   font-size: $h2-font-size;
+   text-align: center;
+   text-transform: capitalize;
+   margin-bottom: 2rem;
+}
+
+
+.container{
+   max-width: 968px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.grid{
+   display: grid;
+   gap: 1.5rem;
+}
+
+/*========== Header ==============*/
+
+.header{
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: $z-fixed;
+   background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+// ===================== header section ====================
+header{
+    max-height: 5rem;
+    max-width: 100%;
+    background: $header-bg-color;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    display: flex;
+    justify-content: space-around;
+    opacity: .8;
+    .nav ul{
+        display: flex;
+        li{
+            padding-top: .5rem;
+            padding-right: 2rem;
+
+            a{
+                text-decoration: none;
+                color: $secondary_color;
+                font-size: 1.4rem;
+                
+            }
+        }
+    }
+
+
+}
+.nav{
+    font-weight: 600;
+    :hover{
+        color: $text-color;
+    }
+}
+.social_link{
+    ul{
+        display: flex;
+        li{
+            margin-right: 2rem;
+            margin-top: .6rem;
+            width: 40px;
+            border-radius: 5px;
+            padding-top: .2rem;
+            text-align: center;
+            background: $secondary_color;
+
+            &:hover a{
+                color:$secondary_color;
+            }
+            &:hover{
+                background-color: #ffffff;
+            }
+        }
+    }
+    a{
+        font-size: 1.4rem;
+        text-decoration: none;
+        // width: 0px;
+        // height: 60px;
+        // border-radius: 50%;
+        color: $primary_color;
+        
+        
+    }
+}
+.logo{
+    cursor: pointer;
+}
+
+#bg_video {
+    
+    min-width: inherit;
+    min-height: inherit;
+    z-index: -5;
+  }
+
+.home_section{
+    height: 600px;
+    background: $primary_color;
+    opacity: .9;
+  }
