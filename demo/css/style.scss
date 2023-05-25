@@ -1,0 +1,241 @@
+// / =============== text font =======
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+$font-family1: 'Roboto Slab', sans-serif;
+$font-family2: 'Nato Serif',sans-serif;
+
+
+
+
+
+
+// ================ color variable =============
+$primary_color : #09a603;
+$deep_green1 : #022601;
+$deep_green2 : #067302;
+$light_green : #68bf65;
+$white : #ffffff;
+$off_white : #f2f2f2;
+$grey: #505050;
+$black1 : #1b1217;
+$black2 : #23211d;
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    height: 6000px;
+    overflow-x: hidden;
+    background-color: $off_white;
+}
+.container{
+    height: 100vh;
+    width: 1320px;
+    background: url(../img/mahim-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    margin-left: 15px;
+    // margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-text{
+    color: $white;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+
+.cart{
+    width: 40px;
+    cursor: pointer;
+}
+.navbar nav{
+    flex: 1;
+    padding-left: 60px;
+    
+
+    ul{
+        float: right;
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: 0 20px;
+            a{
+                text-decoration: none;
+                color: $white;
+                font-size: 1.3rem;
+
+            }
+        }
+    }
+}
+
+.content {
+    margin-left: 5%;
+    margin-top: 5%;
+    h1{
+        font-size: 60px;
+        font-weight: 100;
+        margin-top: 24px;
+        margin-bottom: 15px;
+        color: #232d60;
+        // color: $white;
+    }
+    p{
+        font-size: 1.2rem;
+        color: $white;
+        line-height: 1.4rem;
+
+
+    }
+}
+
+.btn{
+    display: inline-block;
+    background: linear-gradient(45deg,#1d976c,#93f9b9);
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: #232d60;
+    font-weight: 600;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+    margin-top: 1.7rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+.feature-img{
+    height: 40%;
+    // width: 40%;
+    position: absolute;
+    bottom: 40%;
+    right: 7rem;
+    // transform: rotate(-90deg);
+    img{
+        height: 440px;
+        width: 370px;
+        border-radius: 10px;
+    }
+}
+.feature-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    margin-left: 5px;
+    height: 440px;
+    border: solid 3px $off_white;
+    border-radius: 5px;
+    transform: rotate(-10deg);
+    opacity: .6;
+
+
+  }
+  .feature-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    margin-left: 5px;
+    height: 440px;
+    border: solid 3px $off_white;
+    border-radius: 5px;
+    transform: rotate(10deg);
+    opacity: .6;
+
+
+  }
+
+
+.social-links{
+    transform: rotate(-90deg);
+    position:absolute;
+    bottom: 180px;
+    left: -80px;
+
+    a{
+        padding-right: .5rem;
+        color: #6a7199;
+        font-size: 14px;
+    }
+}
+
+
+
+.service{
+    height: 100vh;
+    width: 100%;
+    // background-color: red;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    margin-left: 15px;
+    // margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.service-header{
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header-line{
+        border-bottom: solid 3px $primary_color;
+        margin-right: .7rem;
+        width: 30px;
+    }
+    .header-data{
+        font-weight: 500;
+    }
+}
+
+
+.service-text-highlight{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $deep_green2;
+}
+.service-text-data{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+}
+
